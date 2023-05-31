@@ -1,6 +1,8 @@
 # Pset 1
 Aluno: Igor Peli Resende
+
 Turma: CC3M
+
 Professor: Abrantes Araújo Silva Filho
 
 # Descrição:
