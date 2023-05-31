@@ -241,10 +241,14 @@ if __name__ == '__main__':
     Imagem.salvar(pythonFocada,'pset1/resposta/python.png')
 
     # Questão 6:
+    # Esse operador realiza a convolução horizontal, assim como o kernel Kx. 
+    # Ele destaca as variações horizontais de intensidade na imagem.
     operadorSobelX = [[1, 0, -1],
                    [2, 0, -2],
                    [1, 0, -1]]
-
+    
+    # Esse operador realiza a convolução vertical, semelhante ao kernel Ky. 
+    # Ele destaca as variações verticais de intensidade na imagem.
     operadorSobelY = [[1, 2, 1],
                    [0, 0, 0],
                    [-1, -2, -1]]
