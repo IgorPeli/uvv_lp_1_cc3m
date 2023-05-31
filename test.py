@@ -2,17 +2,17 @@
 # Preencha seus dados e leia a declaração de honestidade abaixo. NÃO APAGUE
 # nenhuma linha deste comentário de seu código!
 #
-#    Nome completo:
-#    Matrícula:
-#    Turma:
-#    Email:
+#    Nome completo: Igor Peli Resende   
+#    Matrícula: 202202232   
+#    Turma: CC3M
+#    Email: igor.peli.resende2gmail.com
 #
 # DECLARAÇÃO DE HONESTIDADE ACADÊMICA:
 # Eu afirmo que o código abaixo foi de minha autoria. Também afirmo que não
 # pratiquei nenhuma forma de "cola" ou "plágio" na elaboração do programa,
 # e que não violei nenhuma das normas de integridade acadêmica da disciplina.
 # Estou ciente de que todo código enviado será verificado automaticamente
-# contra plágio e que caso eu tenha praticado qualquer atividade proibida
+# contra plágio e que caso eu tenha praticado qualquer atividade proibida$$$$
 # conforme as normas da disciplina, estou sujeito à penalidades conforme
 # definidas pelo professor da disciplina e/ou instituição.
 #
@@ -30,7 +30,7 @@ TEST_DIRECTORY = os.path.dirname(__file__)
 # Classe para os testes de imagem:
 class TestImagem(unittest.TestCase):
     def test_carregar(self):
-        resultado = pset1.Imagem.carregar('test_images/centered_pixel.png')
+        resultado = pset1.Imagem.carregar(r'C:\Users\Pichau\Desktop\pset1\test_images\centered_pixel.png')
         esperado = pset1.Imagem(11, 11,
                                 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                                  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -44,12 +44,12 @@ class TestImagem(unittest.TestCase):
                                  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                                  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
         self.assertEqual(resultado, esperado)
-
-
+             
+        
 # Classe para os testes de inversão:
 class TestInvertida(unittest.TestCase):
     def test_invertida_1(self):
-        im = pset1.Imagem.carregar('test_images/centered_pixel.png')
+        im = pset1.Imagem.carregar(r'C:\Users\Pichau\Desktop\pset1\test_images\centered_pixel.png')
         resultado = im.invertida()
         esperado = pset1.Imagem(11, 11,
                                 [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255,
@@ -64,10 +64,12 @@ class TestInvertida(unittest.TestCase):
                                  255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255,
                                  255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255])
         self.assertEqual(resultado,  esperado)
-
+        
     def test_invertida_2(self):
-        # Escreva aqui o seu caso de teste
-        self.assertTrue(False)
+        im = pset1.Imagem(4,1,[29, 89, 136, 200])
+        resultado = im.invertida()
+        esperado = pset1.Imagem(4,1,[226, 166, 119, 55])                  
+        self.assertTrue(resultado, esperado)
 
     def test_imagens_invertidas(self):
         for nome_arquivo in ('mushroom', 'twocats', 'chess'):
