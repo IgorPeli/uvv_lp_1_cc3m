@@ -203,31 +203,31 @@ if __name__ == '__main__':
     # O código neste bloco só será executado quando você executar
     # explicitamente seu script e não quando os testes estiverem
     # sendo executados. Este é um bom lugar para gerar imagens, etc.
-     # Questão 01: Está no TestInvertida.test_invertida_2
+    # Questão 01: Está no TestInvertida.test_invertida_2
     
-     # Questão 02:
-     peixe = Imagem.carregar(r'C:\Users\Pichau\Desktop\pset1\test_images\bluegill.png')
-     peixe = peixe.invertida()
-     Imagem.salvar(peixe,'pset1/resposta/peixe.png')
+    # Questão 02:
+    peixe = Imagem.carregar(r'C:\Users\Pichau\Desktop\pset1\test_images\bluegill.png')
+    peixe = peixe.invertida()
+    Imagem.salvar(peixe,'pset1/resposta/peixe.png')
 
-     # Questão 03:
-     80x0   +   (-0,07x53)   +   99x0 +
+    # Questão 03:
+    80x0   +   (-0,07x53)   +   99x0 +
     (-0,45x129) + 127x1,20 + (-0,25x148) + 175x0 + (-0,12x174) + 193x0 +0 -3,71 +0 - 58,05 + 152,4 -37 +0 -20,88 +0 = 32,76
     
-     # Questão 04:
-     kernel = [[0, 0, 0, 0, 0, 0, 0, 0, 0], 
-               [0, 0, 0, 0, 0, 0, 0, 0, 0], 
-               [1, 0, 0, 0, 0, 0, 0, 0, 0], 
-               [0, 0, 0, 0, 0, 0, 0, 0, 0], 
-               [0, 0, 0, 0, 0, 0, 0, 0, 0], 
-               [0, 0, 0, 0, 0, 0, 0, 0, 0], 
-               [0, 0, 0, 0, 0, 0, 0, 0, 0], 
-               [0, 0, 0, 0, 0, 0, 0, 0, 0], 
-               [0, 0, 0, 0, 0, 0, 0, 0, 0]]
+    # Questão 04:
+    kernel = [[0, 0, 0, 0, 0, 0, 0, 0, 0], 
+              [0, 0, 0, 0, 0, 0, 0, 0, 0], 
+              [1, 0, 0, 0, 0, 0, 0, 0, 0], 
+              [0, 0, 0, 0, 0, 0, 0, 0, 0], 
+              [0, 0, 0, 0, 0, 0, 0, 0, 0], 
+              [0, 0, 0, 0, 0, 0, 0, 0, 0], 
+              [0, 0, 0, 0, 0, 0, 0, 0, 0], 
+              [0, 0, 0, 0, 0, 0, 0, 0, 0], 
+              [0, 0, 0, 0, 0, 0, 0, 0, 0]]
 
-     porco = Imagem.carregar(r'C:\Users\Pichau\Desktop\pset1\test_images\pigbird.png')
-     relacaoPorco = porco.relacao(kernel)
-     Imagem.salvar(relacaoPorco, 'pset1/resposta/porco_passaro.png')
+    porco = Imagem.carregar(r'C:\Users\Pichau\Desktop\pset1\test_images\pigbird.png')
+    relacaoPorco = porco.relacao(kernel)
+    Imagem.salvar(relacaoPorco, 'pset1/resposta/porco_passaro.png')
 
     
     # Questão 5.1:
@@ -240,25 +240,25 @@ if __name__ == '__main__':
     pythonFocada = python.focada(11)
     Imagem.salvar(pythonFocada,'pset1/resposta/python.png')
 
-     # Questão 6:
-     operadorSobelX = [[1, 0, -1],
-                    [2, 0, -2],
-                    [1, 0, -1]]
+    # Questão 6:
+    operadorSobelX = [[1, 0, -1],
+                   [2, 0, -2],
+                   [1, 0, -1]]
 
-     operadorSobelY = [[1, 2, 1],
-                    [0, 0, 0],
-                    [-1, -2, -1]]
+    operadorSobelY = [[1, 2, 1],
+                   [0, 0, 0],
+                   [-1, -2, -1]]
     
 
-     construcao = Imagem.carregar(r'C:\Users\Pichau\Desktop\pset1\test_images\construct.png')
-     construcaoSobelX = construcao.relacao(operadorSobelX)
-     Imagem.salvar(construcaoSobelX, 'pset1/resposta/construcao_sobel_X.png')
+    construcao = Imagem.carregar(r'C:\Users\Pichau\Desktop\pset1\test_images\construct.png')
+    construcaoSobelX = construcao.relacao(operadorSobelX)
+    Imagem.salvar(construcaoSobelX, 'pset1/resposta/construcao_sobel_X.png')
 
-     construcaoSobelY = construcao.relacao(operadorSobelY)
-     Imagem.salvar(construcaoSobelY, 'pset1/resposta/construcao_sobel_Y.png')
+    construcaoSobelY = construcao.relacao(operadorSobelY)
+    Imagem.salvar(construcaoSobelY, 'pset1/resposta/construcao_sobel_Y.png')
  
-     construct = construcao.bordas()
-     Imagem.salvar(construct,'pset1/resposta/construcao.png')
+    construct = construcao.bordas()
+    Imagem.salvar(construct,'pset1/resposta/construcao.png')
     pass
 
     # O código a seguir fará com que as janelas de Imagem.mostrar
