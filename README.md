@@ -1,5 +1,5 @@
 Pset 1
-Aluno: Henrique Oliveira Waisman
+Aluno: Igor Peli Resende
 Turma: CC3M
 Professor: Abrantes Araújo Silva Filho
 
