@@ -30,8 +30,8 @@ No arquivo principal, há exemplos de utilização dos métodos da classe Imagem
 
 A classe Imagem também fornece métodos para carregar imagens a partir de arquivos e salvar imagens em disco. Os métodos carregar e salvar são utilizados para esse propósito. O método carregar lê uma imagem do arquivo fornecido e realiza a conversão para tons de cinza, enquanto o método salvar salva uma imagem no disco em um formato especificado.  
 
-## Execução e testes
+## Executando os Testes
 
-O código pode ser executado diretamente para realizar as operações descritas nos exemplos do arquivo principal. Para executar o código, é necessário ter uma instalação do Python 3 e as bibliotecas PIL e tkinter instaladas.  
+Para executar os testes automatizados, execute o arquivo pset1_tests.py presente neste diretório. Certifique-se de que o pacote unittest esteja instalado no ambiente Python. Os testes irão verificar a corretude das implementações e exibir os resultados no console.  
 
-Além disso, o repositório contém testes automatizados para verificar o correto funcionamento da classe Imagem. Os testes estão localizados em um arquivo separado e podem ser executados para verificar se as funcionalidades estão implementadas corretamente.  
+Caso queira executar individualmente cada grupo de testes, você pode descomentar a seção correspondente ao grupo de testes desejado no final do arquivo pset1.py e executá-lo separadamente. 
