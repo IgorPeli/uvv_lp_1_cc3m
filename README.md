@@ -52,3 +52,9 @@ Os resultados esperados das operações são armazenados no diretório test_resu
 
     Python 3.5 ou superior
     Bibliotecas: os, pset1, unittest
+    
+## Questões e Respostas
+
+Ao longo do arquivo pset-1.pdf, você encontrará uma série de questões relacionadas ao projeto pset1 - Processamento de Imagens. As respostas para essas questões estão disponíveis no final do arquivo pset1.py
+
+    
