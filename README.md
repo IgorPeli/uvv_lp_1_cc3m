@@ -35,3 +35,20 @@ A classe Imagem também fornece métodos para carregar imagens a partir de arqui
 Para executar os testes automatizados, execute o arquivo pset1_tests.py presente neste diretório. Certifique-se de que o pacote unittest esteja instalado no ambiente Python. Os testes irão verificar a corretude das implementações e exibir os resultados no console.  
 
 Caso queira executar individualmente cada grupo de testes, você pode descomentar a seção correspondente ao grupo de testes desejado no final do arquivo pset1.py e executá-lo separadamente. 
+
+## Diretório de Testes
+
+Os testes utilizam imagens localizadas no diretório test_images para verificar os resultados das operações. Os resultados esperados são armazenados no diretório test_results. Certifique-se de que os arquivos de imagem estejam presentes nesses diretórios antes de executar os testes.  
+
+## Diretório de Imagens de Entrada
+
+As imagens de entrada utilizadas nos testes estão localizadas no diretório test_images. Para utilizar suas próprias imagens de entrada, coloque-as neste diretório e faça as modificações necessárias nos testes.  
+
+## Diretório de Resultados Esperados
+
+Os resultados esperados das operações são armazenados no diretório test_results. Para adicionar novos casos de teste, adicione as imagens de resultado esperado neste diretório e atualize os testes correspondentes para comparar com os resultados obtidos.  
+
+## Requisitos
+
+    Python 3.5 ou superior
+    Bibliotecas: os, pset1, unittest
