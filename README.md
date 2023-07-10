@@ -21,7 +21,7 @@ uncionalidades implementadas
 - **focada(n)**: retorna uma nova imagem resultante da operação de nitidez aplicada à imagem atual.  
 - **bordas()**: retorna uma nova imagem realçando as bordas da imagem atual utilizando o operador Sobel.  
 
-### Utilização
+## Utilização
 
 Para utilizar a classe Imagem, basta criar uma instância da classe com a largura, altura e pixels da imagem desejada. Em seguida, é possível chamar os métodos disponíveis para realizar diferentes operações na imagem.  
 No arquivo principal, há exemplos de utilização dos métodos da classe Imagem para executar diferentes operações em imagens de teste. Essas operações incluem inversão de cores, aplicação de convolução, desfoque, realce de nitidez e realce de bordas.
@@ -30,7 +30,7 @@ No arquivo principal, há exemplos de utilização dos métodos da classe Imagem
 
 A classe Imagem também fornece métodos para carregar imagens a partir de arquivos e salvar imagens em disco. Os métodos carregar e salvar são utilizados para esse propósito. O método carregar lê uma imagem do arquivo fornecido e realiza a conversão para tons de cinza, enquanto o método salvar salva uma imagem no disco em um formato especificado.  
 
-### Execução e testes
+## Execução e testes
 
 O código pode ser executado diretamente para realizar as operações descritas nos exemplos do arquivo principal. Para executar o código, é necessário ter uma instalação do Python 3 e as bibliotecas PIL e tkinter instaladas.  
 
